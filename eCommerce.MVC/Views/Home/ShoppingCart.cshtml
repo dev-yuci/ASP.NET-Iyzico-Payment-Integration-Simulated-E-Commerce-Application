@@ -1,0 +1,106 @@
+﻿@model List<ShoppingCart>
+@{
+	int index = 0;
+}
+
+<div>
+	<h3>Shopping Cart</h3>
+</div>
+
+<div class="mt-2">
+	@if(Model.Count() == 0)
+	{
+		<h3 class="alert alert-dark">No products found in the cart !</h3>
+	}
+	else
+	{
+		<div class="row">
+		<div class="col-9">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Product Image</th>
+						<th>Product Name</th>
+						<th>Product Price</th>
+						<th>Transactions</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						index++;
+						<tr>
+							<td>@index</td>
+							<td>
+								<img src="/images/@item.ImageUrl" width="75" />
+							</td>
+							<td>@item.Name</td>
+							<td>@item.Price</td>
+							<td>
+								<a asp-controller="Home" asp-action="RemoveFromCart" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">
+									Sil
+								</a>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+		<div class="col-3">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="alert alert-success text-center">
+						₺ @ViewBag.Total.ToString("#,##0.00")
+						@* @TempData["Total"] *@
+					</h4>
+				</div>
+
+				@if (TempData["Error"] != null)
+				{
+					<div class="card-body">
+						<h5 class="alert alert-danger">
+							@TempData["Error"]
+						</h5>
+					</div>
+				}
+
+				<form asp-controller="Home" asp-action="Pay" method="post">
+					<div class="card-body mt-2">
+						<div class="form-group">
+							<label>Cardholder Name</label>
+							<input class="form-control" name="owner" value="İyzico User" />
+						</div>
+						<div class="form-group mt-2">
+							<label>Card Number</label>
+							<input class="form-control" name="cardNumber" value="4766620000000001" />
+						</div>
+
+						<div class="form-group mt-2 row">
+							<div class="col-6">
+								<div class="form-group">
+									<label>Expiration Date</label>
+									<input class="form-control" name="expiryDate" value="12/2030" />
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label>CVC</label>
+									<input class="form-control" name="cvc" value="100" />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group mt-2">
+							<button type="submit" class="btn btn-success w-100">
+								Payment
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	}
+	
+</div>
