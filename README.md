@@ -1,13 +1,13 @@
 <h1 align="center">🛒 ASP.NET & Iyzico Payment Integration Simulated E-Commerce Application</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/username/project-name?style=for-the-badge">
-  <img src="https://img.shields.io/github/repo-size/username/project-name?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/username/project-name?style=for-the-badge">
+  <img src="https://img.shields.io/github/languages/top/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application?style=for-the-badge">
+  <img src="https://img.shields.io/github/repo-size/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img src="https://your-project-banner.com/banner.png" alt="Project Banner">
+  <img src="https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application/blob/master/ASP.NETE-Commerce-1.png" alt="Project Banner">
 </p>
 
 ## 🌟 **Project Description**  
@@ -35,8 +35,10 @@ This project is a **simulated e-commerce application** built with **ASP.NET and 
 
 ## 📸 **Screenshots**  
 <p align="center">
-  <img src="https://your-screenshot-link.com/screenshot1.png" width="400">
-  <img src="https://your-screenshot-link.com/screenshot2.png" width="400">
+  <img src="https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application/blob/master/ASP.NETE-Commerce-1.png" width="400">
+  <img src="https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application/blob/master/ASP.NETE-Commerce-2.png" width="400">
+  <img src="https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application/blob/master/ASP.NETE-Commerce-3.png" width="400">
+  <img src="https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application/blob/master/ASP.NETE-Commerce-4.png" width="400">
 </p>
 
 ---
@@ -47,7 +49,7 @@ Follow these steps to set up and run the project:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/username/project-name.git
+git clone https://github.com/dev-yuci/ASP.NET-Iyzico-Payment-Integration-Simulated-E-Commerce-Application
 
 # 2️⃣ Navigate to the project directory
 cd project-name
